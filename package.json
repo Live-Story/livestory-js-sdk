@@ -66,5 +66,12 @@
     "kolorist": "^1.8.0",
     "vite-plugin-banner": "^0.8.0",
     "vite-plugin-dts": "^4.5.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Live-Story/livestory-js-sdk/issues"
+  },
+  "homepage": "https://github.com/Live-Story/livestory-js-sdk#readme",
+  "directories": {
+    "test": "tests"
   }
 }
