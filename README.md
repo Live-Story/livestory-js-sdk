@@ -34,4 +34,8 @@ import LiveStoryClient from "livestory-js-sdk";
 const Livestory = new LiveStoryClient({
   accessToken: <YOUR_ACCESS_TOKEN>
 });
+
+Livestory.getLayouts({
+  folder_id: 'my_folder_id'
+});
 ```

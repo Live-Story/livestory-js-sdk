@@ -16,7 +16,7 @@
     "extends": "@tsconfig/recommended/tsconfig.json",
     "$schema": "https://json.schemastore.org/tsconfig",
     "display": "Recommended",
-    "include": ["./src", "vite.config.ts"],
-    "exclude": ["node_modules"]
+    "include": ["./src"],
+    "exclude": ["node_modules", "./src/**/*.test.ts", "./src/**/*.spec.ts"]
   }
   

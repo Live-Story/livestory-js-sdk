@@ -6,13 +6,21 @@
   "module": "./dist/index.mjs",
   "unpkg": "./dist/index.umd.js",
   "jsdelivr": "./dist/index.umd.js",
-  "types": "./dist/types/src/entry.esm.d.ts",
+  "types": "./dist/types/entry.esm.d.ts",
   "author": "Live Story",
   "license": "MIT",
   "source": "src/index.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Live-Story/livestory-js-sdk.git"
+  },
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/types/entry.esm.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.umd.js"
+    }
   },
   "files": [
     "dist",

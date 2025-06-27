@@ -183,7 +183,7 @@ class LsFetch {
         status: res.status,
         response: Array.isArray(res.data)
           ? res.data[0]
-          : res.data.error || res.data.slug,
+          : res.data.error,
       }
 
       reject(error)
