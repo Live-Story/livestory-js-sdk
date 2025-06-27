@@ -1,6 +1,6 @@
 {
   "name": "livestory-js-sdk",
-  "version": "1.0.0",
+  "version": "1.0.0-rc.3",
   "description": "JavaScript SDK for Live Story's Delivery API",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.mjs",

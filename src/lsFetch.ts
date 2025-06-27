@@ -181,9 +181,7 @@ class LsFetch {
       const error: ILsError = {
         message: res.data.message || res.statusText,
         status: res.status,
-        response: Array.isArray(res.data)
-          ? res.data[0]
-          : res,
+        response: res
       }
 
       reject(error)
