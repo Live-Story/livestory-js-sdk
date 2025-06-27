@@ -34,12 +34,41 @@ import LiveStoryClient from "livestory-js-sdk";
 const Livestory = new LiveStoryClient({
   accessToken: <YOUR_ACCESS_TOKEN>
 });
+```
 
+## Code examples
+
+```javascript
+// Get layouts by folder id
 try {
   const response = await Livestory.getLayouts({ folder_id: 'your_folder_id' });
+
   console.log(response.items);
-} catch (err) {
+} 
+catch (err) {
   const lsErr = err as ILsError;
   console.error('Error fetching layouts:', lsErr.status, lsErr.message);
 }
 ```
+
+```javascript
+// Get layouts by attribute(s)
+try {
+  const response = await Livestory.getLayouts({ 
+    filter_query:  {
+      myfield: {
+          in: 'value1,value2'
+      }
+    }
+  });
+
+  console.log(response.items);
+} 
+catch (err) {
+  const lsErr = err as ILsError;
+  console.error('Error fetching layouts:', lsErr.status, lsErr.message);
+}
+```
+
+
+
