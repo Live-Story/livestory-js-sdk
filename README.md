@@ -35,7 +35,11 @@ const Livestory = new LiveStoryClient({
   accessToken: <YOUR_ACCESS_TOKEN>
 });
 
-Livestory.getLayouts({
-  folder_id: 'my_folder_id'
-});
+try {
+  const response = await Livestory.getLayouts({ folder_id: 'your_folder_id' });
+  console.log(response.items);
+} catch (err) {
+  const lsErr = err as ILsError;
+  console.error('Error fetching layouts:', lsErr.status, lsErr.message);
+}
 ```
