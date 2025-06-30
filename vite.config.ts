@@ -1,7 +1,7 @@
 import { lightGreen } from 'kolorist';
 import pkg from './package.json';
 import banner from 'vite-plugin-banner';
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 import dts from 'vite-plugin-dts';
 
 // eslint-disable-next-line no-console
