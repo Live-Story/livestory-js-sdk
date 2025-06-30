@@ -65,6 +65,19 @@
     "vite-plugin-banner": "^0.8.1",
     "vitest": "^3.2.4"
   },
+  "release": {
+    "branches": [
+      "master",
+      {
+        "name": "next",
+        "prerelease": true
+      },
+      {
+        "name": "beta",
+        "prerelease": true
+      }
+    ]
+  },
   "prettier": {
     "semi": false,
     "singleQuote": true,
