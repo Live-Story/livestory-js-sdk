@@ -10,11 +10,11 @@ const METHOD = {
   
   export default Method
   
-  export const LIVESTORY_AGENT = 'LS-Agent'
+  export const LIVESTORY_AGENT = 'x-ls-agent'
   
   export const LIVESTORY_JS_CLIENT_AGENT = {
     defaultAgentName: 'LS-JS-CLIENT',
-    defaultAgentVersion: 'LS-Agent-Version',
+    defaultAgentVersion: 'x-ls-agent-version',
     packageVersion: '1.0.0',
   }
   
