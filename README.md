@@ -34,7 +34,7 @@ const Livestory = new LiveStoryClient({
 });
 ```
 
-## Code examples
+## Usage examples
 
 ```javascript
 // Get layouts by folder id
