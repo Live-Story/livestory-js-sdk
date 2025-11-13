@@ -39,7 +39,7 @@ class Livestory {
   private accessToken: string
   private helpers: LsHelpers
 
-    /**
+  /**
    *
    * @param config ILsConfig interface
    * @param endpoint string, optional
@@ -148,7 +148,7 @@ class Livestory {
       params = {} as ILsContentsParams;
     }
     const url = `/${slug}`;
-    const query = this.factoryParamOptions(url, params);
+    this.factoryParamOptions(url, params);
 
     const result = await this.makeRequest(url, params)
 
