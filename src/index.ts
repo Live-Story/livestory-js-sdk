@@ -144,7 +144,6 @@ class Livestory {
     slug: string,
     params: ILsLayoutsParams,
   ): Promise<ILsResult | ILsError> {
-    console.log('merda')
     if (!params) {
       params = {} as ILsContentsParams;
     }

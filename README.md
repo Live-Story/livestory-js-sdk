@@ -11,8 +11,6 @@
 npm install livestory-js-sdk # yarn add livestory-js-sdk
 ```
 
-
-
 #### Compatibility
 
 | Version to install                                                                                                            | Support                                              |
@@ -69,6 +67,3 @@ catch (err) {
   console.error('Error fetching layouts:', lsErr.status, lsErr.message);
 }
 ```
-
-
-
